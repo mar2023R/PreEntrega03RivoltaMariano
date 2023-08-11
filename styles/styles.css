@@ -1,0 +1,369 @@
+/*iportación de tipo de letra, siempre arriba*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+/*reseteo del proyecto*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*/ body {
+    background-color: rgb(116, 116, 23);
+}
+
+/*header*/
+
+header {
+    display: flex;
+    background-color: rgb(71, 73, 221);
+    position: sticky;
+    top: 0;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*logo*/
+.logo {
+    width: 100px;
+    height: 100px;
+
+}
+
+/*titulo*/
+h1 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    text-align: start;
+}
+
+/*menu del nav*/
+nav {
+    display: flex;
+    align-self: flex-end;
+
+}
+
+/*letras del menu*/
+ul {
+    list-style-type: none;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+    padding: 5px;
+
+}
+
+.menu li {
+    display: inline;
+    margin: 2px;
+    padding: 25px;
+
+
+
+}
+
+.menu_item a {
+    color: rgb(187, 49, 56);
+    text-decoration: none;
+}
+
+.menu_item.active a {
+    color: black;
+    text-decoration: double;
+}
+
+.menu_item:hover {
+    text-decoration: underline double;
+}
+
+
+/*linea separadora*/
+
+.linea {
+    margin-right: 0px;
+}
+
+/*párrafo servicios*/
+.servicios {
+    background-color: rgb(250, 180, 209);
+    width: 400px;
+    height: 400px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 20px;
+    text-align: justify;
+    background-image: url("./../img/servicios.jpeg");
+
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-position-y: 80%;
+    /* background-attachment: fixed;
+    border-radius: 20%; */
+}
+
+/*párrafo drones*/
+.modelos_drones {
+    background-color: rgb(115, 121, 204);
+    width: 400px;
+    height: 400px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 40px;
+    text-align: justify;
+    background-image: url("./../img/drones_inicio.jpeg");
+
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-position-y: 80%;
+    border-radius: 20%;
+    display: inline-block;
+}
+
+.modelos_drones1 {
+    background-color: rgb(115, 121, 204);
+    width: 400px;
+    height: 400px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 40px;
+    text-align: justify;
+    background-image: url("./../img/drones_inicio1.jpeg");
+    display: inline-block;
+
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-position-y: 80%;
+    border-radius: 20%;
+}
+
+.modelos_drones2 {
+    background-color: rgb(115, 121, 204);
+    width: 400px;
+    height: 400px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 40px;
+    text-align: justify;
+    background-image: url("./../img/drones_inicio2.jpeg");
+    display: inline-block;
+
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-position-y: 80%;
+    border-radius: 20%;
+}
+
+/*párrafo nosotros*/
+.nosotros {
+    background-color: rgb(250, 180, 209);
+    width: 400px;
+    height: 400px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 40px;
+    text-align: justify;
+    background-image: url("./../img/nosotros.jpeg");
+
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-position-y: 90%;
+    border-radius: 20%;
+    /* background-attachment: fixed;
+         */
+}
+
+/*grid tienda*/
+
+.grid {
+    border: solid red 2px;
+    background-color: aqua;
+    width: 100%;
+    height:800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas:
+        "caja1 caja1 caja2 caja3"
+        "caja1 caja1 caja4 caja5";
+        
+}
+
+.caja1 {
+    background: blue;
+   
+    grid-area: caja1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    background-image: url("./../img/tienda1.jpg");
+    background-size: 100 vh;
+    background-repeat: no-repeat;
+    padding: 10px;
+    
+    background-position: 50%;
+    background-position-y: 60%;   
+    }
+
+.caja2 {
+    background: rgb(221, 63, 142);
+   
+    grid-area: caja2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    background-image: url("./../img/remera.jpeg");
+    background-size: 100 vh;
+    background-position: 50%;
+    background-position-y: 60%;   
+    padding: 10px;
+    background-repeat: no-repeat;
+   
+    }
+
+.caja3 {
+    background: rgb(38, 38, 185);
+   
+    grid-area: caja3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    background-image: url("./../img/chombas.jpeg");
+    background-size: 100 vh;
+    background-position: 50%;
+    background-position-y: 60%;   
+    padding: 10px;
+    background-repeat: no-repeat;
+    }
+
+.caja4 {
+    background: rgb(146, 146, 168);
+    
+    grid-area: caja4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    background-image: url("./../img/pantalonremera.jpeg");
+    background-size: 100 vh;
+    background-position: 50%;
+    background-position-y: 60%;   
+    padding: 10px;
+    background-repeat: no-repeat;
+   }
+
+.caja5 {
+    background: rgb(231, 77, 90);
+    
+    grid-area: caja5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    background-image: url("./../img/zapatillas.jpeg");
+    background-size: 100 vh;
+    background-position: 50%;
+    background-position-y: 60%;   
+    margin: 10 px;
+    background-repeat: no-repeat;
+
+   }
+
+
+
+
+/*párrafo blog*/
+.blog {
+    background-color: rgb(250, 180, 209);
+    width: 400px;
+    height: 400px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 40px;
+    text-align: justify;
+    background-image: url("./../img/blog.jpeg");
+
+    background-size: cover;
+
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-position-y: 90%;
+    border-radius: 20%;
+
+
+}
+
+.historia {
+    max-width: fit-content;
+    height: 400px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 400;
+    padding: 40px;
+    text-align: justify;
+}
+
+/*footer*/
+
+.footer {
+    display: inline;
+
+}
+
+.politicas,
+.contactos,
+.privacidad {
+    background-color: gray;
+    color: rgb(29, 3, 3);
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 400;
+    padding: 5px;
+
+}
+
+/*redes sociales*/
+
+.redes_sociales li {
+    display: inline;
+    padding: 25px;
+}
+@media screen and (max-width: 768px) {
+    
+.caja1, .caja2, .caja3, .caja4, .caja5 {
+    
+    background-image: url("./../img/open\ screen.jpeg");
+    background-size: 100 vh;
+    background-repeat: no-repeat;
+    padding: 10px;
+    background-position: 50%
+    background-position-y: 50%
+}
+    
+}
