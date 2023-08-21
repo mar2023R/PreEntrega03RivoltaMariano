@@ -1,0 +1,34 @@
+/*footer*/
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    border: solid red 2px;
+    background-color: $principalcolor;
+
+    .politicas,
+    .contactos,
+    .privacidad {
+
+        color: rgb(29, 3, 3);
+        font-family: "PT Sans Narrow", sans-serif;
+        font-weight: 600;
+        list-style-type: none;
+    }
+}
+
+/*redes sociales*/
+.redes_sociales {
+    background-color: $secundarycolor;
+    display: flex;
+    justify-content: end;
+}
+.wp,
+.facebook,
+.instagram {
+    display: flex;
+    display: inline;
+   
+   
+    
+    
+}

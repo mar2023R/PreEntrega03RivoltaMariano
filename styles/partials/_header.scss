@@ -1,0 +1,87 @@
+/*header*/
+header {
+
+    background-color: $principalcolor;
+    position: sticky;
+    gap: 20px;
+
+    .grid_1 {
+        display: grid;
+        border: solid red 2px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "caja_1 caja_2";
+
+        .caja_1 {
+            grid-area: caja_1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+
+            /*logo*/
+            .logo {
+                width: 100px;
+                height: 100px;
+            }
+
+            /*titulo*/
+            h1 {
+                font-family: 'PT Sans Narrow', sans-serif;
+                font-weight: 400;
+            }
+        }
+
+        .caja_2 {
+            grid-area: caja_2;
+            display: flex;
+            flex-direction: row;
+            align-items:end;
+            justify-content: end;
+            gap: 1rem;
+            /*menu del nav*/
+
+
+            /*letras del menu*/
+            .menu {
+                justify-content: end;
+                list-style-type: none;
+                font-family: 'PT Sans Narrow', sans-serif;
+                font-size: x-large;
+                font-weight: 700;
+                padding: 5px;
+                gap: 20px;
+            }
+
+            .menu li {
+                display: flex;
+                display: inline;
+                list-style-type: none;
+                margin: 2px;
+                padding: 25px;
+            }
+
+            .menu_item a {
+                color: rgb(187, 49, 56);
+                text-decoration: none;
+            }
+
+            .menu_item.active a {
+                color: black;
+                text-decoration: double;
+            }
+
+            .menu_item:hover {
+                text-decoration: underline double;
+            }
+        }
+    }
+}
+
+/*linea separadora*/
+
+.linea {
+    margin-right: 0px;
+    margin: 0%;
+}

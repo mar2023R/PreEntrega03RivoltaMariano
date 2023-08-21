@@ -1,0 +1,42 @@
+.contenedor_1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+    background-color: $tercercolor;
+
+    /*párrafo nosotros*/
+    .nosotros {
+        background-color: $secundarycolor;
+        width: 400px;
+        height: 400px;
+        font-family: "PT Sans Narrow", sans-serif;
+        font-weight: 400;
+        margin-top: 20px;
+        margin-left: 40px;
+        padding: 40px;
+        text-align: justify;
+        background-image: url("./../img/nosotros.jpeg");
+        background-size: 200px 200px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-position-y: 100%;
+        border-radius: 20%;
+    }
+
+    /*carousel*/
+    #carouselExample {
+        margin-top: 70px;
+        width: 35%;
+    }
+}
+ /*párrafo historia*/
+.historia {
+    background-color: $tercercolor;
+    max-width: none;
+    height: 400px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+    padding: 40px;
+    text-align: justify;
+}
