@@ -37,6 +37,8 @@ header .grid_1 .caja_1 .logo {
 header .grid_1 .caja_1 h1 {
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 400;
+  font-size: xx-large;
+  margin-bottom: 0;
 }
 header .grid_1 .caja_2 {
   grid-area: caja_2;
@@ -56,6 +58,8 @@ header .grid_1 .caja_2 .menu {
   font-weight: 700;
   padding: 5px;
   gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 header .grid_1 .caja_2 .menu li {
   display: flex;
@@ -331,6 +335,25 @@ body {
   padding: 10px;
 }
 
+/*footer nosotros*/
+.contenedor_4 {
+  display: flex;
+  flex-direction: column;
+  border: solid red 2px;
+  background-color: blue;
+  padding-left: 1 rem;
+}
+.contenedor_4 .nosotros {
+  color: rgb(29, 3, 3);
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 600;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 1rem;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
 /*redes sociales*/
 .redes_sociales {
   background-color: pink;
@@ -343,6 +366,22 @@ body {
 .instagram {
   display: flex;
   display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+/*redes sociales nosotros*/
+.redes_sociales_1 {
+  background-color: pink;
+  display: flex;
+  justify-content: end;
+}
+
+.nosotros_1 {
+  display: flex;
+  display: inline;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 768px) {

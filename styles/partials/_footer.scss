@@ -1,4 +1,5 @@
 /*footer*/
+
 .contenedor {
     display: flex;
     flex-direction: column;
@@ -16,20 +17,57 @@
         padding: 10px;
     }
 }
+/*footer nosotros*/
+.contenedor_4 {
+    display: flex;
+    flex-direction: column;
+    border: solid red 2px;
+    background-color: $principalcolor;
+    padding-left: 1 rem;
+
+    .nosotros {
+        color: rgb(29, 3, 3);
+        font-family: "PT Sans Narrow", sans-serif;
+        font-weight: 600;
+        list-style-type: none;
+        margin: 0;
+        padding-left: 1rem ;
+        padding-bottom: 10px;
+        padding-top: 10px;
+               
+    }
+
+}
 
 /*redes sociales*/
 .redes_sociales {
     background-color: $secundarycolor;
     display: flex;
     justify-content: end;
+
 }
+
 .wp,
 .facebook,
 .instagram {
     display: flex;
     display: inline;
-   
-   
-    
-    
+    margin: 0;
+    padding: 0;
+}
+
+/*redes sociales nosotros*/
+
+.redes_sociales_1 {
+    background-color: $secundarycolor;
+    display: flex;
+    justify-content: end;
+
+}
+
+.nosotros_1 {
+    display: flex;
+    display: inline;
+    margin: 0;
+    padding: 0;
 }

@@ -6,6 +6,7 @@ header {
     gap: 20px;
 
     .grid_1 {
+
         display: grid;
         border: solid red 2px;
         grid-template-columns: 1fr 1fr;
@@ -30,6 +31,8 @@ header {
             h1 {
                 font-family: 'PT Sans Narrow', sans-serif;
                 font-weight: 400;
+                font-size: xx-large;
+                margin-bottom: 0;
             }
         }
 
@@ -37,9 +40,10 @@ header {
             grid-area: caja_2;
             display: flex;
             flex-direction: row;
-            align-items:end;
+            align-items: end;
             justify-content: end;
             gap: 1rem;
+            
             /*menu del nav*/
 
 
@@ -52,6 +56,8 @@ header {
                 font-weight: 700;
                 padding: 5px;
                 gap: 20px;
+                padding: 0;
+                margin: 0;
             }
 
             .menu li {
