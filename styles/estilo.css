@@ -51,22 +51,19 @@ header .grid_1 .caja_2 {
   /*letras del menu*/
 }
 header .grid_1 .caja_2 .menu {
+  display: flex;
   justify-content: end;
   list-style-type: none;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: x-large;
-  font-weight: 700;
-  padding: 5px;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
+  font-weight: 500;
 }
 header .grid_1 .caja_2 .menu li {
   display: flex;
   display: inline;
   list-style-type: none;
   margin: 2px;
-  padding: 25px;
+  padding: 10px;
 }
 header .grid_1 .caja_2 .menu_item a {
   color: rgb(187, 49, 56);
@@ -92,14 +89,18 @@ body {
   background-color: rgb(116, 116, 23);
 }
 
-/*párrafo drones*/
+/*párrafo drones
+.modelos {
+  display: flex;
+  display: inline-block;
+}*/
 .modelos_drones {
   background-color: rgb(115, 121, 204);
   width: 400px;
-  height: 400px;
+  height: 450px;
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 50px;
   padding: 40px;
   text-align: justify;
@@ -115,10 +116,10 @@ body {
 .modelos_drones1 {
   background-color: rgb(115, 121, 204);
   width: 400px;
-  height: 400px;
+  height: 450px;
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 20px;
   padding: 40px;
   text-align: justify;
@@ -127,17 +128,17 @@ body {
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 50%;
-  background-position-y: 80%;
+  background-position-y: 90%;
   border-radius: 20%;
 }
 
 .modelos_drones2 {
   background-color: rgb(115, 121, 204);
   width: 400px;
-  height: 400px;
+  height: 450px;
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 20px;
   padding: 40px;
   text-align: justify;
@@ -148,6 +149,12 @@ body {
   background-position: 50%;
   background-position-y: 80%;
   border-radius: 20%;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
 }
 
 /*grid tienda*/
@@ -242,29 +249,30 @@ body {
   padding: 20px;
   gap: 20px;
   background-color: rgb(116, 116, 23);
-  /*párrafo nosotros*/
   /*carousel*/
-}
-.contenedor_1 .nosotros {
-  background-color: pink;
-  width: 400px;
-  height: 400px;
-  font-family: "PT Sans Narrow", sans-serif;
-  font-weight: 400;
-  margin-top: 20px;
-  margin-left: 40px;
-  padding: 40px;
-  text-align: justify;
-  background-image: url("./../img/nosotros.jpeg");
-  background-size: 200px 200px;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-position-y: 100%;
-  border-radius: 20%;
+  /*párrafo nosotros*/
 }
 .contenedor_1 #carouselExample {
-  margin-top: 70px;
-  width: 35%;
+  margin-top: 100px;
+  width: 30%;
+}
+.contenedor_1 .nosotros {
+  background-color: rgb(115, 121, 204);
+  width: 400px;
+  height: 350px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 40px;
+  text-align: justify;
+  background-image: url("../../img/donde estamos.jpeg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-position-y: 80%;
+  border-radius: 20%;
+  display: inline-block;
 }
 
 /*párrafo historia*/
@@ -279,23 +287,40 @@ body {
 }
 
 /*párrafo servicios*/
-.servicios {
-  background-color: rgb(250, 180, 209);
-  width: 400px;
-  height: 400px;
-  font-family: "PT Sans Narrow", sans-serif;
-  font-weight: 400;
-  margin-top: 20px;
-  margin-left: 40px;
-  padding: 20px;
-  text-align: justify;
-  background-image: url("./../img/servicios.jpeg");
-  background-size: 200px 200px;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-position-y: 80%;
-  /* background-attachment: fixed;
-  border-radius: 20%; */
+.tarjetas {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tarjeta1 :hover,
+.tarjeta2 :hover,
+.tarjeta3 :hover,
+.tarjeta4 :hover {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: all 3s;
+}
+
+.titulo_1,
+.titulo_2,
+.titulo_3,
+.titulo_4 {
+  background-color: #48b148;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  width: 200px;
+}
+
+.parrafo_1,
+.parrafo_2,
+.parrafo_3,
+.parrafo_4 {
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 /*párrafo blog*/

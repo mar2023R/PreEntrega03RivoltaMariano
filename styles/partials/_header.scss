@@ -43,21 +43,18 @@ header {
             align-items: end;
             justify-content: end;
             gap: 1rem;
-            
+
             /*menu del nav*/
 
 
             /*letras del menu*/
             .menu {
+                display: flex;
                 justify-content: end;
                 list-style-type: none;
                 font-family: 'PT Sans Narrow', sans-serif;
                 font-size: x-large;
-                font-weight: 700;
-                padding: 5px;
-                gap: 20px;
-                padding: 0;
-                margin: 0;
+                font-weight: 500;
             }
 
             .menu li {
@@ -65,7 +62,7 @@ header {
                 display: inline;
                 list-style-type: none;
                 margin: 2px;
-                padding: 25px;
+                padding: 10px;
             }
 
             .menu_item a {
