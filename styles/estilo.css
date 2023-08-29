@@ -10,7 +10,7 @@
 
 /*header*/
 header {
-  background-image: linear-gradient(blue, rgb(71, 71, 134));
+  background-image: linear-gradient(blue, rgb(71, 71, 134), rgb(186, 117, 241), yellow);
   position: sticky;
   gap: 20px;
 }
