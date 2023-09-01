@@ -276,7 +276,7 @@ h3 {
   margin-left: 50px;
   padding: 40px;
   text-align: justify;
-  background-image: url("../../img/donde estamos.jpeg");
+  background-image: url("./../img/donde estamos.jpeg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 50%;
