@@ -6,46 +6,32 @@
     border: solid red 2px;
     background-image: linear-gradient(blue, rgb(71, 71, 134));
     padding: 10px;
-    
+
 
     .contenedorA,
     .contenedorB,
     .contenedorC {
         display: flex;
-        
         color: rgb(29, 3, 3);
         font-family: "PT Sans Narrow", sans-serif;
         font-weight: 600;
         padding: 10px;
-        
+
     }
 }
+
 li {
     list-style-type: none;
-    }
+}
 
+.Cuenta,
+.Información,
+.Contáctenos {
+    color: rgb(153, 7, 26);
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: larger;
+}
 
-/*footer nosotros
-.contenedor_4 {
-    display: flex;
-    flex-direction: column;
-    border: solid red 2px;
-    background-color: $principalcolor;
-    padding-left: 1 rem;
-
-    .nosotros {
-        color: rgb(29, 3, 3);
-        font-family: "PT Sans Narrow", sans-serif;
-        font-weight: 600;
-        list-style-type: none;
-        margin: 0;
-        padding-left: 1rem;
-        padding-bottom: 10px;
-        padding-top: 10px;
-
-    }
-
-}*/
 
 /*redes sociales*/
 .redes_sociales {
