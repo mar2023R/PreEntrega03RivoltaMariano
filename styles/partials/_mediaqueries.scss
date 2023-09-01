@@ -1,14 +1,12 @@
-@media screen and (max-width: 768px) {
-    .caja1,
-    .caja2,
-    .caja3,
-    .caja4,
-    .caja5 {
-      background-image: url("./../img/open screen.jpeg");
-      background-size: 100 vh;
-      background-repeat: no-repeat;
-      padding: 10px;
-      background-position: 50% background-position-y 50%;
-    }
-  }/*# sourceMappingURL=styles.css.map */
-  
+
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 576x) {
+    @content;
+  }
+}
