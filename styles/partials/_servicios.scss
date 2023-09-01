@@ -1,9 +1,9 @@
 /*párrafo servicios*/
 .tarjetas {
-  margin: 10px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 
 }
 
@@ -15,7 +15,7 @@
   align-items: center;
   width: 100%;
   transition: all 3s;
-  
+
 }
 
 .titulo_1,
@@ -27,6 +27,11 @@
   justify-content: center;
   padding: 2rem;
   width: 200px;
+  color: rgb(153, 7, 26);
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: larger;
+  font-weight: 800;
+  margin-top: 10px;
 
 }
 
@@ -35,5 +40,5 @@
 .parrafo_3,
 .parrafo_4 {
   margin-left: 10px;
-  margin-top: 5px;
+  margin-top: 15px;
 }

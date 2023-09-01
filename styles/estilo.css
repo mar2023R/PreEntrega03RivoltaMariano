@@ -88,6 +88,12 @@ header .grid_1 .caja_2 .menu_item:hover {
 body {
   background-color: rgb(116, 116, 23);
 }
+body .historia {
+  color: rgb(153, 7, 26);
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: larger;
+  font-weight: 800;
+}
 
 .modelos {
   display: flex;
@@ -255,6 +261,7 @@ h3 {
   color: rgb(153, 7, 26);
   font-family: "PT Sans Narrow", sans-serif;
   font-size: larger;
+  font-weight: 800;
 }
 
 .contenedor_1 {
@@ -292,16 +299,16 @@ h3 {
   height: 400px;
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 400;
-  padding: 40px;
+  padding: 20px;
   text-align: justify;
 }
 
 /*párrafo servicios*/
 .tarjetas {
-  margin: 10px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .tarjeta1 :hover,
@@ -323,6 +330,11 @@ h3 {
   justify-content: center;
   padding: 2rem;
   width: 200px;
+  color: rgb(153, 7, 26);
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: larger;
+  font-weight: 800;
+  margin-top: 10px;
 }
 
 .parrafo_1,
@@ -330,7 +342,7 @@ h3 {
 .parrafo_3,
 .parrafo_4 {
   margin-left: 10px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 /*párrafo blog*/
