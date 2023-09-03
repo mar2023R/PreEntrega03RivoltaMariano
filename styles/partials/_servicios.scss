@@ -5,6 +5,10 @@
   flex-direction: column;
   gap: 2rem;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
 }
 
 .tarjeta1 :hover,

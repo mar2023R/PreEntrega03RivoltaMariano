@@ -92,6 +92,19 @@
         margin: 10 px;
         background-repeat: no-repeat;
     }
+
+    @include tablet {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "caja1"
+            "caja2"
+            "caja3"
+            "caja4"
+            "caja5";
+
+    }
 }
 
 .caja1,
