@@ -47,7 +47,6 @@ header .grid_1 .caja_2 {
   align-items: end;
   justify-content: end;
   gap: 1rem;
-  /*menu del nav*/
   /*letras del menu*/
 }
 header .grid_1 .caja_2 .menu {
@@ -94,6 +93,7 @@ body .historia {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: larger;
   font-weight: 800;
+  padding-bottom: 20px;
 }
 
 .modelos {
@@ -313,7 +313,6 @@ h3 {
   margin-bottom: 20px;
 }
 
-/*párrafo servicios*/
 .tarjetas {
   margin: 20px;
   display: flex;
