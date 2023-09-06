@@ -3,20 +3,15 @@
 .contenedor {
     display: flex;
     justify-content: space-between;
-    border: solid red 2px;
-    background-image: linear-gradient(blue, rgb(71, 71, 134));
-    padding: 10px;
-
-
+    background-color: $principalcolor;
+    
     .contenedorA,
     .contenedorB,
     .contenedorC {
         display: flex;
-        color: rgb(29, 3, 3);
+        color: $primeraletra;
         font-family: "PT Sans Narrow", sans-serif;
-        font-weight: 600;
-        padding: 10px;
-
+        font-weight: 700;
     }
 }
 
@@ -27,17 +22,24 @@ li {
 .Cuenta,
 .Información,
 .Contáctenos {
-    color: rgb(153, 7, 26);
+    color: $segundaletra;
     font-family: "PT Sans Narrow", sans-serif;
     font-size: larger;
+}
+
+ol {
+    margin-left: -1rem;
+    margin-right: 1rem;
 }
 
 
 /*redes sociales*/
 .redes_sociales {
-    background-color: $secundarycolor;
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    background-color: $principalcolor;
+    margin-top: -1rem;
+   
 
 }
 
@@ -48,20 +50,6 @@ li {
     display: inline;
     margin: 0;
     padding: 0;
-}
-
-/*redes sociales nosotros*/
-
-.redes_sociales_1 {
-    background-color: $secundarycolor;
-    display: flex;
-    justify-content: end;
-
-}
-
-.nosotros_1 {
-    display: flex;
-    display: inline;
-    margin: 0;
-    padding: 0;
+    
+   
 }
