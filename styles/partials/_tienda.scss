@@ -1,7 +1,5 @@
 /*grid tienda*/
 .grid {
-
-    background-color: aqua;
     width: 100%;
     height: 800px;
     display: grid;
@@ -12,37 +10,51 @@
         "caja1 caja1 caja4 caja5";
 
     .caja1 {
-        background: $tercercolor;
+        background: $secundarycolor;
         grid-area: caja1;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 1rem;
         gap: 1rem;
-        background-image: url("./../img/tienda1.jpg");
-        background-size: 100 vh;
-        background-repeat: no-repeat;
-        padding: 10px;
-        background-position: 50%;
-        background-position-y: 60%;
+       
+
+        .gorras1 {
+            width: 35%;
+            height: 30%;
+            border-radius: 100%;
+        }
+
+        .gorras2 {
+            border-radius: 100%;
+        }
+
+        .gorras3 {
+            border-radius: 100%;
+        }
     }
 
 
-
     .caja2 {
-        background: rgb(221, 63, 142);
+        background: $secundarycolor;
         grid-area: caja2;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 1rem;
         gap: 1rem;
-        background-image: url("./../img/remera.jpeg");
-        background-size: 100 vh;
-        background-position: 50%;
-        background-position-y: 60%;
-        padding: 10px;
-        background-repeat: no-repeat;
+        
+
+        .remeras {
+            width: 60%;
+            height: 60%;
+            border-radius: 10%;
+        }
+        .remeras2 {
+            width: 60%;
+            height: 60%;
+            border-radius: 10%;
+        }
     }
 
     .caja3 {
@@ -53,44 +65,42 @@
         align-items: center;
         padding: 1rem;
         gap: 1rem;
-        background-image: url("./../img/chombas.jpeg");
-        background-size: 100 vh;
-        background-position: 50%;
-        background-position-y: 60%;
-        padding: 10px;
-        background-repeat: no-repeat;
+
+        .chombas {
+            width: 90%;
+            height: 90%;
+            border-radius: 100%;
+        }
     }
 
     .caja4 {
-        background: rgb(146, 146, 168);
+        background: $secundarycolor;
         grid-area: caja4;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 1rem;
         gap: 1rem;
-        background-image: url("./../img/pantalonremera.jpeg");
-        background-size: 100 vh;
-        background-position: 50%;
-        background-position-y: 60%;
-        padding: 10px;
-        background-repeat: no-repeat;
+
+        .pantalones {
+            width: 50%;
+            height: 50%;
+        }
     }
 
     .caja5 {
-        background: rgb(231, 77, 90);
+        background: $secundarycolor;
         grid-area: caja5;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 1rem;
         gap: 1rem;
-        background-image: url("./../img/zapatillas.jpeg");
-        background-size: 100 vh;
-        background-position: 50%;
-        background-position-y: 60%;
-        margin: 10 px;
-        background-repeat: no-repeat;
+
+        .zapatillas {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     @include tablet {

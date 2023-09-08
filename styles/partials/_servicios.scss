@@ -5,6 +5,7 @@
   flex-direction: column;
   gap: 2rem;
 
+
   @include mobile {
     flex-direction: column;
   }
@@ -36,6 +37,7 @@
   font-size: larger;
   font-weight: 800;
   margin-top: 10px;
+  border-radius: 10%;
 
 }
 

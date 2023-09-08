@@ -2,7 +2,7 @@
 header {
     background-color: $principalcolor;
     position: sticky;
-    gap: 20px;
+    gap: 20px; 
 
     .grid_1 {
 
@@ -11,6 +11,7 @@ header {
         grid-template-rows: 1fr;
         grid-template-areas:
             "caja_1 caja_2";
+           
 
         .caja_1 {
             grid-area: caja_1;
@@ -18,22 +19,34 @@ header {
             flex-direction: row;
             align-items: center;
             gap: 1rem;
+            padding: 1rem;
 
             /*logo*/
             .logo {
-                width: 100px;
-                height: 100px;
+               width: 10rem;
+               height: 10rem;
                 border-radius: 100%;
                 padding: 1rem;
+                
             }
 
             /*titulo*/
             h1 {
                 font-family: 'PT Sans Narrow', sans-serif;
-                color:$primeraletra;
+                color: $primeraletra;
                 font-weight: 400;
-                font-size: xx-large;
+                font-size: 2.5rem;
                 margin-bottom: 0;
+                display: flex;
+            }
+
+            .titulo_ppal {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            @include mobile {
+                flex-direction: column;
             }
         }
 
@@ -44,7 +57,7 @@ header {
             align-items: end;
             justify-content: end;
             gap: 1rem;
-           
+
             /*letras del menu*/
             .menu {
                 display: flex;
@@ -53,12 +66,12 @@ header {
                 font-family: 'PT Sans Narrow', sans-serif;
                 font-size: x-large;
                 font-weight: 500;
-                flex-wrap: wrap;  
+                flex-wrap: wrap;
 
                 @include mobile {
                     flex-direction: column;
-                    
-                  }
+
+                }
             }
 
             .menu li {
@@ -75,20 +88,13 @@ header {
             }
 
             .menu_item.active a {
-                
+
                 text-decoration: double;
             }
 
             .menu_item:hover {
-                text-decoration: underline double; 
+                text-decoration: underline double;
             }
         }
     }
-}
-
-/*linea separadora*/
-
-.linea {
-    margin-right: 0px;
-    margin: 0%;
 }
