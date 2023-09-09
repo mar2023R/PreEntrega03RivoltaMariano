@@ -1,13 +1,13 @@
 /*grid tienda*/
 .grid {
     width: 100%;
-    height: 800px;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-        "caja1 caja1 caja2 caja3"
-        "caja1 caja1 caja4 caja5";
+        "caja1 caja1 caja2 caja2"
+        "caja1 caja1 caja3 caja3";
 
     .caja1 {
         background: $secundarycolor;
@@ -16,8 +16,7 @@
         flex-direction: column;
         align-items: center;
         padding: 1rem;
-        gap: 1rem;
-       
+        gap: 1.5rem;
 
         .gorras1 {
             width: 35%;
@@ -26,104 +25,73 @@
         }
 
         .gorras2 {
+            width: 35%;
+            height: 30%;
             border-radius: 100%;
         }
 
         .gorras3 {
+            width: 35%;
+            height: 30%;
             border-radius: 100%;
         }
     }
 
-
     .caja2 {
-        background: $secundarycolor;
         grid-area: caja2;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        align-content: center;
+       
+       
         padding: 1rem;
         gap: 1rem;
-        
 
-        .remeras {
-            width: 60%;
-            height: 60%;
-            border-radius: 10%;
-        }
+        .remeras,
         .remeras2 {
-            width: 60%;
-            height: 60%;
+            width: 40%;
+            height: 80%;
             border-radius: 10%;
+            padding: 1rem;
+            gap: 1rem;
         }
+
     }
 
     .caja3 {
-        background: $secundarycolor;
+        font-size: medium;
+        color: $primeraletra;
+        text-decoration: none;
         grid-area: caja3;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        gap: 1rem;
+        flex-direction: row;
+        align-content: center;
+        
 
-        .chombas {
-            width: 90%;
-            height: 90%;
-            border-radius: 100%;
-        }
-    }
-
-    .caja4 {
-        background: $secundarycolor;
-        grid-area: caja4;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        gap: 1rem;
-
-        .pantalones {
-            width: 50%;
-            height: 50%;
-        }
-    }
-
-    .caja5 {
-        background: $secundarycolor;
-        grid-area: caja5;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        gap: 1rem;
 
         .zapatillas {
-            width: 100%;
-            height: 100%;
+            width: 40%;
+            height: 40%;
+            padding: 1rem;
+            gap: 1rem;
+        }
+
+        .zapatillas2 {
+            width: 30%;
+            height: 40%;
+            padding: 1rem;
+            gap: 1rem;
         }
     }
 
-    @include tablet {
+    @include mobile {
         flex-direction: column;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
             "caja1"
             "caja2"
-            "caja3"
-            "caja4"
-            "caja5";
+            "caja3";
 
     }
-}
-
-.caja1,
-.caja2,
-.caja3,
-.caja4,
-.caja5 {
-    color: rgb(153, 7, 26);
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: larger;
-    font-weight: 800;
 }
