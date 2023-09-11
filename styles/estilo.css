@@ -116,7 +116,7 @@ body .historia {
   padding: 10px;
   background-color: rgb(106, 46, 53);
 }
-@media screen and (max-width: 1122px) {
+@media screen and (max-width: 576px) {
   .modelos {
     flex-direction: column;
   }
@@ -179,11 +179,6 @@ body .historia {
 h5 {
   display: flex;
   justify-content: left;
-  margin-bottom: 5px;
-  background-color: rgb(106, 46, 53);
-}
-
-.linea {
   background-color: rgb(106, 46, 53);
 }
 

@@ -6,7 +6,7 @@
   padding: 10px;
   background-color: $secundarycolor;
 
-  @include desktop {
+  @include mobile {
     flex-direction: column;
   }
 
@@ -64,16 +64,10 @@
   background-position: 50%;
   background-position-y: 80%;
   border-radius: 20%;
-
 }
 
 h5 {
   display: flex;
   justify-content:left;
-  margin-bottom: 5px;
   background-color: $secundarycolor;
- 
   }
-.linea {
-  background-color: $secundarycolor;
-}
