@@ -105,7 +105,6 @@ body .historia {
   font-size: larger;
   font-weight: 800;
   color: rgb(190, 138, 96);
-  padding-bottom: 20px;
 }
 
 .modelos {
@@ -116,7 +115,7 @@ body .historia {
   padding: 10px;
   background-color: rgb(106, 46, 53);
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1122px) {
   .modelos {
     flex-direction: column;
   }
@@ -427,27 +426,4 @@ ol {
   display: inline;
   margin: 0;
   padding: 0;
-}
-
-/* ver mas
-.wp {
-    position: relative;
-    color: red;
-    font-weight: 600;
-}
-.wp::before {
-    content: "ver mas";
-    position:absolute;
-    bottom: 100%;
-    background-color: black;
-    font-weight: 400;
-    font-size: .8em;
-    padding: .25rem .5rem;
-    border-radius: .25rem;
-    color: white;
-    display: none;
-}
-
-.wp:hover::before {
-    display: inline-block;
-} *//*# sourceMappingURL=estilo.css.map */
+}/*# sourceMappingURL=estilo.css.map */

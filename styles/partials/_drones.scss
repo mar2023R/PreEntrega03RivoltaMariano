@@ -6,7 +6,7 @@
   padding: 10px;
   background-color: $secundarycolor;
 
-  @include mobile {
+  @include desktop {
     flex-direction: column;
   }
 
