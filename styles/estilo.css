@@ -114,11 +114,11 @@ body .historia {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  background-color: rgb(106, 46, 53);
 }
 @media screen and (max-width: 1122px) {
   .modelos {
     flex-direction: column;
-    color: rgb(106, 46, 53);
   }
 }
 
@@ -220,6 +220,7 @@ h5 {
   display: flex;
   flex-direction: row;
   align-content: center;
+  align-items: center;
   padding: 1rem;
   gap: 1rem;
 }
