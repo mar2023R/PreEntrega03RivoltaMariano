@@ -100,12 +100,12 @@ body {
   background-color: rgb(106, 46, 53);
 }
 body .historia {
-  color: rgb(190, 138, 96);
+  background-color: rgb(106, 46, 53);
   font-family: "PT Sans Narrow", sans-serif;
   font-size: larger;
   font-weight: 800;
+  color: rgb(190, 138, 96);
   padding-bottom: 20px;
-  background-color: rgb(106, 46, 53);
 }
 
 .modelos {

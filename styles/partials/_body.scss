@@ -1,15 +1,12 @@
 body {
   background-color: $secundarycolor;
-  
-  
-  
 
   .historia {
-    color: $tercercolor;
+    background-color: $secundarycolor;
     font-family: "PT Sans Narrow", sans-serif;
     font-size: larger;
     font-weight: 800;
+    color: $tercercolor;
     padding-bottom: 20px;
-    background-color: $secundarycolor;
   }
 }
