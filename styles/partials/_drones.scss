@@ -21,7 +21,7 @@
   margin-top: 50px;
   
   padding: 40px;
-  text-align: justify;
+  text-align:center;
   background-image: url("./../img/drones_inicio.jpeg");
   background-size: auto;
   background-repeat: no-repeat;
@@ -42,10 +42,10 @@
   margin-top: 50px;
  
   padding: 40px;
-  text-align: justify;
+  text-align:center;
   background-image: url("./../img/drones_inicio1.jpeg");
   display: inline-block;
-  background-size: auto;
+  background-size: 275px 150px;
   background-repeat: no-repeat;
   background-position: 50%;
   background-position-y: 90%;
@@ -62,7 +62,7 @@
   margin-top: 50px;
   
   padding: 40px;
-  text-align: justify;
+  text-align:center;
   background-image: url("./../img/drones_inicio2.jpeg");
   display: inline-block;
   background-size: auto;
@@ -73,9 +73,9 @@
 
 }
 
-h3 {
+h5 {
   display: flex;
-  justify-content: center;
+  justify-content:left;
   margin-bottom: 5px;
-
-}
+ 
+  }

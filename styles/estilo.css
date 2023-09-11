@@ -31,10 +31,10 @@ header .grid_1 .caja_1 {
   /*titulo*/
 }
 header .grid_1 .caja_1 .logo {
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 100%;
-  padding: 1rem;
+  padding: 0;
 }
 header .grid_1 .caja_1 h1 {
   font-family: "PT Sans Narrow", sans-serif;
@@ -59,7 +59,6 @@ header .grid_1 .caja_2 {
   flex-direction: row;
   align-items: end;
   justify-content: end;
-  gap: 1rem;
   /*letras del menu*/
 }
 header .grid_1 .caja_2 .menu {
@@ -70,6 +69,8 @@ header .grid_1 .caja_2 .menu {
   font-size: x-large;
   font-weight: 500;
   flex-wrap: wrap;
+  gap: 1rem;
+  margin-right: 10px;
 }
 @media screen and (max-width: 576px) {
   header .grid_1 .caja_2 .menu {
@@ -80,8 +81,7 @@ header .grid_1 .caja_2 .menu li {
   display: flex;
   display: inline;
   list-style-type: none;
-  margin: 2px;
-  padding: 10px;
+  margin-bottom: 0;
 }
 header .grid_1 .caja_2 .menu_item a {
   color: rgb(29, 3, 3);
@@ -129,7 +129,7 @@ body .historia {
   font-weight: 400;
   margin-top: 50px;
   padding: 40px;
-  text-align: justify;
+  text-align: center;
   background-image: url("./../img/drones_inicio.jpeg");
   background-size: auto;
   background-repeat: no-repeat;
@@ -147,10 +147,10 @@ body .historia {
   font-weight: 400;
   margin-top: 50px;
   padding: 40px;
-  text-align: justify;
+  text-align: center;
   background-image: url("./../img/drones_inicio1.jpeg");
   display: inline-block;
-  background-size: auto;
+  background-size: 275px 150px;
   background-repeat: no-repeat;
   background-position: 50%;
   background-position-y: 90%;
@@ -165,7 +165,7 @@ body .historia {
   font-weight: 400;
   margin-top: 50px;
   padding: 40px;
-  text-align: justify;
+  text-align: center;
   background-image: url("./../img/drones_inicio2.jpeg");
   display: inline-block;
   background-size: auto;
@@ -175,9 +175,9 @@ body .historia {
   border-radius: 20%;
 }
 
-h3 {
+h5 {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 5px;
 }
 
