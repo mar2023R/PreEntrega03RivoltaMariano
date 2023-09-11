@@ -19,7 +19,6 @@
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 400;
   margin-top: 50px;
-  
   padding: 40px;
   text-align:center;
   background-image: url("./../img/drones_inicio.jpeg");
@@ -29,8 +28,6 @@
   background-position-y: 80%;
   border-radius: 20%;
   display: inline-block;
-
-
 }
 
 .modelos_drones1 {
@@ -40,7 +37,6 @@
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 400;
   margin-top: 50px;
- 
   padding: 40px;
   text-align:center;
   background-image: url("./../img/drones_inicio1.jpeg");
@@ -50,7 +46,6 @@
   background-position: 50%;
   background-position-y: 90%;
   border-radius: 20%;
-
 }
 
 .modelos_drones2 {
@@ -60,7 +55,6 @@
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 400;
   margin-top: 50px;
-  
   padding: 40px;
   text-align:center;
   background-image: url("./../img/drones_inicio2.jpeg");
@@ -80,3 +74,6 @@ h5 {
   background-color: $secundarycolor;
  
   }
+.linea {
+  background-color: $secundarycolor;
+}
