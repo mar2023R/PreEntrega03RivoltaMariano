@@ -113,11 +113,12 @@ body .historia {
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  padding: 10px;
 }
 @media screen and (max-width: 1122px) {
   .modelos {
     flex-direction: column;
+    color: rgb(106, 46, 53);
   }
 }
 

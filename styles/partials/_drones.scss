@@ -3,10 +3,11 @@
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  padding: 10px;
 
   @include desktop {
     flex-direction: column;
+    color: $secundarycolor;
     
   }
 
