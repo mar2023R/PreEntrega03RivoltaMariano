@@ -175,10 +175,17 @@ body .historia {
   border-radius: 20%;
 }
 
-h5 {
+.historia {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.historia h5 {
   display: flex;
   justify-content: left;
   background-color: rgb(106, 46, 53);
+  font-size: larger;
 }
 
 /*grid tienda*/
@@ -186,7 +193,7 @@ h5 {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 100px 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "caja1 caja1 caja2 caja2" "caja1 caja1 caja3 caja3";
 }
@@ -198,38 +205,31 @@ h5 {
   align-items: center;
   padding: 1rem;
   gap: 1.5rem;
+  margin-top: 2rem;
 }
-.grid .caja1 .gorras1 {
-  width: 35%;
-  height: 30%;
-  border-radius: 100%;
-}
-.grid .caja1 .gorras2 {
-  width: 35%;
-  height: 30%;
-  border-radius: 100%;
-}
+.grid .caja1 .gorras1,
+.grid .caja1 .gorras2,
 .grid .caja1 .gorras3 {
-  width: 35%;
-  height: 30%;
+  width: 12rem;
+  height: 12rem;
   border-radius: 100%;
+  padding: 0.5rem;
 }
 .grid .caja2 {
   grid-area: caja2;
   display: flex;
-  flex-direction: row;
-  align-content: center;
   align-items: center;
   padding: 1rem;
-  gap: 1rem;
+  gap: 2rem;
 }
 .grid .caja2 .remeras,
-.grid .caja2 .remeras2 {
-  width: 40%;
-  height: 80%;
+.grid .caja2 .remeras2,
+.grid .caja2 .remeras3 {
+  width: 15rem;
+  height: 15rem;
   border-radius: 10%;
-  padding: 1rem;
-  gap: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 .grid .caja3 {
   font-size: medium;
@@ -238,19 +238,21 @@ h5 {
   grid-area: caja3;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-content: center;
 }
-.grid .caja3 .zapatillas {
-  width: 40%;
-  height: 40%;
+.grid .caja3 .zapa1,
+.grid .caja3 .zapa2,
+.grid .caja3 .zapa3,
+.grid .caja3 .zapa4,
+.grid .caja3 .zapa5,
+.grid .caja3 .zapa6 {
+  width: 12rem;
+  height: 12rem;
   padding: 1rem;
   gap: 1rem;
-}
-.grid .caja3 .zapatillas2 {
-  width: 30%;
-  height: 40%;
-  padding: 1rem;
-  gap: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 576px) {
   .grid {
@@ -264,18 +266,14 @@ h5 {
 .contenedor_1 {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
-  gap: 20px;
-  background-color: rgb(190, 138, 96);
-  /*carousel*/
-  /*párrafo nosotros*/
 }
 .contenedor_1 .nosotros {
   background-color: rgb(115, 121, 204);
   width: 400px;
-  height: 350px;
+  height: 400px;
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 400;
+  font-size: larger;
   margin-top: 50px;
   padding: 40px;
   text-align: justify;
@@ -290,14 +288,16 @@ h5 {
 
 /*párrafo historia*/
 .historia {
-  background-color: rgb(190, 138, 96);
-  max-width: none;
-  height: 400px;
-  font-family: "PT Sans Narrow", sans-serif;
-  font-weight: 400;
-  padding: 20px;
-  text-align: justify;
-  margin-bottom: 20px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.historia h5 {
+  display: flex;
+  justify-content: left;
+  background-color: rgb(106, 46, 53);
+  font-size: larger;
 }
 
 .tarjetas {
@@ -354,29 +354,47 @@ h5 {
   color: rgb(182, 208, 148);
 }
 
-/*párrafo blog*/
-.contenedor_A {
+.cartitas2 {
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  gap: 20px;
+  gap: 1rem;
+  margin: 10px 5px 5px 10px;
 }
-.contenedor_A .blog {
-  width: 400px;
-  height: 400px;
-  font-family: "PT Sans Narrow", sans-serif;
-  font-weight: 400;
+@media screen and (max-width: 1122px) {
+  .cartitas2 {
+    flex-direction: column;
+  }
+}
+
+.cartita21 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(182, 208, 148);
+  color: rgb(153, 7, 26);
+  padding: 1.4rem;
+}
+
+.cartita1,
+.cartita2,
+.cartita3,
+.cartita4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo1,
+.titulo2,
+.titulo3,
+.titulo4 {
+  align-items: center;
+}
+
+.p1,
+.p2,
+.p3,
+.p4 {
   margin-top: 20px;
-  padding: 40px;
-  text-align: justify;
-  background-image: url("./../img/blog.jpeg");
-  background-size: cover;
-  background-size: 200px 200px;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-position-y: 90%;
-  border-radius: 20%;
-  display: inline-block;
 }
 
 /*footer*/
