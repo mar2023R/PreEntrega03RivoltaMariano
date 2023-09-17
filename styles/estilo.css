@@ -175,13 +175,6 @@ body .historia {
   border-radius: 20%;
 }
 
-.historia h5 {
-  display: flex;
-  justify-content: left;
-  background-color: rgb(106, 46, 53);
-  font-size: larger;
-}
-
 /*grid tienda*/
 .grid {
   width: 100%;
@@ -291,6 +284,7 @@ body .historia {
   margin-right: 2rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  background-color: rgb(106, 46, 53);
 }
 .historia h5 {
   display: flex;
