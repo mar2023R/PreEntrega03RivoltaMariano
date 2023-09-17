@@ -82,6 +82,11 @@
             "caja1"
             "caja2"
             "caja3";
+            justify-content: center;
+            .caja2 {
+                flex-direction: column;
+                justify-content: center;
+            }
 
     }
 }

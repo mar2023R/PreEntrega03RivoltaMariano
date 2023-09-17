@@ -260,6 +260,11 @@ body .historia {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "caja1" "caja2" "caja3";
+    justify-content: center;
+  }
+  .grid .caja2 {
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
