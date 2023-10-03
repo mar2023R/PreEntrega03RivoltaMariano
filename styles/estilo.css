@@ -61,6 +61,9 @@ header .grid_1 .caja_2 {
   justify-content: end;
   /*letras del menu*/
 }
+header .grid_1 .caja_2 .navbar navbar-expand-lg bg-body-tertiary {
+  color: rgb(0, 78, 100);
+}
 header .grid_1 .caja_2 .menu {
   display: flex;
   justify-content: end;

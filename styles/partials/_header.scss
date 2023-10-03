@@ -55,6 +55,11 @@ header {
             align-items: end;
             justify-content: end;
 
+            .navbar navbar-expand-lg bg-body-tertiary{
+                $navbar-dark-color;
+
+            }
+
             /*letras del menu*/
             .menu {
                 display: flex;
